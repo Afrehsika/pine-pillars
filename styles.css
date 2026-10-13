@@ -2596,6 +2596,7 @@ ul {
 
   /* Off-canvas Slide Drawer (Contained with visibility:hidden to prevent horizontal blowout) */
   .nav-links {
+    display: flex !important;
     position: fixed !important;
     top: 0 !important;
     right: 0 !important;
@@ -2619,6 +2620,7 @@ ul {
   }
 
   .nav-links.active {
+    display: flex !important;
     transform: translateX(0) !important;
     visibility: visible !important;
     opacity: 1 !important;
