@@ -74,6 +74,7 @@ function initMobileMenu() {
   function openMenu() {
     navLinks.classList.add('active');
     overlay?.classList.add('active');
+    document.body.classList.add('menu-open');
     document.body.style.overflow = 'hidden';
     toggleBtn.setAttribute('aria-expanded', 'true');
   }
@@ -81,6 +82,7 @@ function initMobileMenu() {
   function closeMenu() {
     navLinks.classList.remove('active');
     overlay?.classList.remove('active');
+    document.body.classList.remove('menu-open');
     document.body.style.overflow = '';
     toggleBtn.setAttribute('aria-expanded', 'false');
   }
